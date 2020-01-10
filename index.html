@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html >
+<html >
+<head>
+<title>Clothes Online Shopping</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<script language="JavaScript">alert(" Welcome to Fashions Shop");</script>
+<body>
+<!-- Shell -->
+<div class="shell">
+  <!-- Header -->
+  <div id="header">
+    <h1 >Clothes Online Shopping</h1>
+    <!-- Navigation -->
+    <div id="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.htm">Contact Us</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+  </div>
+  <!-- End Header -->
+  <!-- Main -->
+  <div id="main">
+    <div class="cl">&nbsp;</div>
+    <!-- Content -->
+    <div id="content">
+      <!-- Content Slider -->
+      <div id="slider" class="box">
+       <div id="slider-holder">
+          <ul><div style="max-width:500px">
+                <img class="mySlides" src="images/slide1.jpg" style="width:123%">
+                <img class="mySlides" src="images/slide2.jpg" style="width:123%">
+                <img class="mySlides" src="images/slide3.jpg" style="width:124%">
+                </div>
+
+                 <script>
+                 var myIndex = 0;
+                 carousel();
+                function carousel() {
+                 var i;
+                var x = document.getElementsByClassName("mySlides");
+                 for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                 }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                 x[myIndex-1].style.display = "block";  
+                 setTimeout(carousel, 3000); // Change image every 3 seconds
+                }
+             </script>
+          </ul>
+        </div>
+       
+      </div>
+      <!-- End Content Slider -->
+      <!-- Products -->
+      <div class="products">
+        <div class="cl">&nbsp;</div>
+        <ul>
+          <li> <a href="#"><img src="images/big1.jpg" width="188"></a> </li>
+          <li> <a href="#"><img src="images/big2.jpg" width="188"></a></li>
+          <li > <a href="#"><img src="images/big3.jpg"  width="188"></a> </li>
+          <li > <a href="#"><img src="images/big4.jpg"  width="188"></a></li>
+          <li > <a href="#"><img src="images/big5.jpg" width="188"></a></li>
+          <li > <a href="#"><img src="images/big6.jpg" width="200"></a></li>
+        </ul>
+        <div class="cl">&nbsp;</div>
+      </div>
+      <!-- End Products -->
+    </div>
+    <!-- End Content -->
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <!-- Categories -->
+      <div class="box categories">
+         <div class="box-content">
+          <ul>
+ 
+              <h2> Fashions</h2> 
+              <!--Accordion-->
+          <button class="accordion">Men Clothes</button>
+          <div class="panel">
+            <ul>
+                  <li> <a href="Men Clothes/man1.htm">Coats & Jackets</a></li>
+                  <li> <a href="Men Clothes/man2.htm">Jeans</a></li>
+                  <li> <a href="Men Clothes/man3.htm">T-Shirts</a></li>
+                  <li> <a href="Men Clothes/man4.htm">Shirts</a></li>
+                  <li> <a href="Men Clothes/man5.htm">Underwear</a></li>
+           </ul>
+          </div>
+
+<button class="accordion">Women Clothes</button>
+<div class="panel">
+   <ul>
+      <li> <a href="Women Clothes/wman1.htm">Coats & Jackets</a></li>
+      <li> <a href="Women Clothes/wman2.htm">Skirts</a></li>
+      <li> <a href="Women Clothes/wman3.htm">Jeans</a></li>
+      <li> <a href="Women Clothes/wman4.htm">Traditional Clothings</a></li>
+   </ul>
+</div>
+ 
+<button class="accordion">Children Clothes</button>
+<div class="panel">
+     <ul>
+        
+        <li> <a href="#home">Sets</a></li>
+ </ul>
+ </div>
+
+<!----JavaScript---->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+        </div>
+      </div>
+      <!-- End Categories -->
+    </div>
+    <!-- End Sidebar -->
+    <div class="cl">&nbsp;</div>
+  </div>
+  <!-- End Main -->
+  <!-- More Products -->
+    <div class="more-products">
+      <div class="more-products-holder">
+        <ul><marquee>
+          <li><a href="#"><img src="images/big1.jpg" width="100"></a></li>
+          <li><a href="#"><img src="images/big2.jpg" width="100"></a></li>
+          <li><a href="#"><img src="images/big3.jpg" width="120"></a></li>
+          <li><a href="#"><img src="images/big4.jpg" width="100"></a></li>
+          <li><a href="#"><img src="images/big5.jpg" width="100"></a></li>
+          <li><a href="#"><img src="images/big6.jpg" width="100"></a></li>
+          <li><a href="#"><img src="images/big1.jpg" width="100"></a></li>
+        </marquee>
+        </ul>
+      </div>
+    </div>
+    <!-- End More Products -->
+   <!-- Footer -->
+   <div id="footer">
+      <p class="right"> &copy; 2017 Shop Around. Design by Group IV </p>
+   </div>
+  <!-- End Footer -->
+</div>
+</div>
+<!-- End Shell -->
+</body>
+</html>

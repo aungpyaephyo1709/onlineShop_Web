@@ -1,0 +1,70 @@
+* { padding:0; margin:0; outline:0; }
+body {
+	background:#fff url(images/body.gif) repeat-x 0 0;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size:12px;
+	line-height:16px;
+	color:#636363;
+}
+input, textarea, select { font-family: "Trebuchet MS", Arial, sans-serif; font-size:12px; }
+
+a { color:#8b0000; text-decoration: underline; cursor:pointer; }
+a:hover { color:#666; text-decoration: none; }
+
+.cl { font-size:0; line-height:0; clear:both; display:block; height:0; }
+
+h1 { font-size:200%; line-height:1; width:100; height:0; float:left; }
+
+.mySlides {display:none;}
+
+.shell { width:960px; margin:0 auto; padding:10px; background:#fff; }
+
+#header { height:64px; background:url(images/header.gif); position:relative;}
+
+#navigation { float:right; white-space:nowrap; }
+#navigation ul{ list-style-type: none; height:64px; font-weight: bold; float:left;}
+#navigation ul li{ float:left; display:inline; }
+#navigation ul li a{ float:left; height:64px; line-height:64px; text-decoration: none; color:#fff; padding:0 15px;}
+#navigation ul li a:hover{ background:#fff; color:#8b0000; }
+
+#sidebar { float:left; width:100;}
+#content { float:right; width:724px;}
+
+#main { padding:10px 0 0 0; }
+.box { padding:1px; border:solid 1px #dedede; margin-bottom:10px;}
+.box h2{ background:#7f7f7f; color:#fff; font-weight: normal; padding:0 5px; position:relative; height:27px; line-height:27px; }
+.box-content { padding:5px;}
+
+.categories { height:720px;}
+.categories ul li a{ color:#5f5f5f; background:url(images/cat.gif) no-repeat 0 4px;font-size:larger; padding-left:17px;}
+
+#slider-holder ul li{ width:720px; height:252px; position:relative; overflow:hidden; float:left; }
+
+.products {}
+.products ul{ list-style-type: none;}
+.products ul li{ position:relative; padding:2px; border:solid 3px #dedede; float:left; width:225px; margin-right:5px; height:220px; overflow:hidden; }
+
+
+.more-products { border:solid 1px #dedede; position:relative; height:114px; overflow:hidden; }
+.more-products ul{ list-style-type: none; height:94px; position:relative; overflow:hidden; width:805px;}
+.more-products ul li{ float:left; width:94px; height:94px; border-right:dashed 1px #ccc; padding:0 10px;}
+.more-products-holder { width:804px; height:94px; position:relative; overflow:hidden; top:10px; left:70px;}
+
+#footer { height:51px; background:#ebebeb; white-space:nowrap; line-height:50px; padding:0 15px; color:#7b7b7b; margin-top:10px;}
+#footer a{ color:#7b7b7b; text-decoration: underline;}
+
+button.accordion { background-color: #eee; color: #444;cursor: pointer; padding: 18px; width: 100%;border: none; text-align:
+ left;outline: none;font-size: 15px; transition: 0.4s;}
+
+button.accordion.active, button.accordion:hover {background-color: #ddd;}
+
+button.accordion:after { content: '\002B';  color: #777; font-weight: bold;  float: right;margin-left: 5px;}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+
+div.panel { padding: 0 18px; background-color: white; max-height: 0; overflow: hidden;transition: max-height 0.2s ease-out;
+}
+
